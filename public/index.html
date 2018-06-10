@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>My Random Card</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"  crossorigin="anonymous">
+        <!--<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Butterfly+Kids" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">-->
+    </head>
+
+    <bod>
+       <div class="container" id="mycard">
+            <div class="row">
+                <div class="center-block">
+                    <div id="sup1" class=""><font>&#9829;</font></div> 
+                    <div>
+                        <p id="letter">K</p>
+                    </div>
+                    <div id="inf1" class="text-right"><font>&#9829;</font></div> 
+                </div>
+            </div>
+        </div>
+        <form>
+           <!--<p> <buttom id="buttom" type="button" value="Click me" onclick="myFunction()">Cik 2</buttom></p>-->
+          
+           <P id="button1"><button type="button" onclick="myFunction()"><p id="clickl">Generate!!!</p></button></p>
+            </form>
+        
+       <script type="text/javascript" src="bundle/bundle.js"></script>
+       <script>
+           function myFunction(){
+                        //alert('button1');
+                        //ARRAYS
+                        var letter = ['A', '2', '3', '4', '5', '6', '7', '8', '9','10 ','J', 'Q', 'K'];
+                        //var figure = ['fas fa-heart lhurt fa-6x', 'fas fa-anchor lhurt fa-6x', 'fas fa-address-book black fa-6x', 'fas fa-ambulance black fa-6x'];
+                        var figure = ['&#9829;','&#9827;','&#9824;','&#9830;'];
+                        //SELECT RANDOM Positions in Letter and Figure Array
+                        var randomLetter = Math.floor(Math.random() * letter.length);
+                        var randomFigure = Math.floor(Math.random() * figure.length);
+                        //Update text and icons
+                        document.getElementById("letter").innerHTML = letter[randomLetter];
+                        // document.getElementById('sup').className = figure[randomFigure];
+                        // document.getElementById('inf').className = figure[randomFigure] + ' rotate';
+                        document.getElementById('sup1').innerHTML = figure[randomFigure]; 
+                        document.getElementById('inf1').innerHTML = figure[randomFigure];
+                    };
+       </script>
+    </body>
+</html>
+
+ 

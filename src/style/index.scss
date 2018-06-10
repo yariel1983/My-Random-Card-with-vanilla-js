@@ -1,0 +1,68 @@
+@import '~bootstrap/scss/bootstrap.scss';
+ body{
+                background: green;
+            }
+            #mycard{
+                padding-top: 100px;
+                
+            }
+            .lhurt{
+                color: red;
+            }
+
+            .black{
+                color: black;
+            }
+
+
+            .center-block {
+                width:340px;
+                /*height:480px;*/
+                padding:10px;
+                background: white;
+                border-radius:25px
+            }
+            .rotate {
+                transform: rotate(180deg);
+            }
+            #letter {
+                height: 295px;
+                text-align: center;
+                padding: 85px 0;
+                font-size:  80px;
+            }
+           #button1{
+               text-align: center;
+               padding-top: 25px;
+            }
+           #inf1{
+             font-size: 70px;
+           }
+           #sup1{
+            font-size: 70px;
+           }
+           #clickl{
+               font-size: 10px;
+               font-weight: bold;
+            }
+            
+            
+           
+           
+
+
+/* 
+    body{
+        background: #BDBDBD;
+    }
+    
+    You can write your own styles here...
+    
+    
+    ...Or you can use the import command to include 
+    other sylesheets into your bunde as well, e.j:
+    
+    import 'relative/path/to/stylesheet.scss';
+
+*/
+
